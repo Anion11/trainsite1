@@ -6,7 +6,57 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="x-apple-disable-message-reformatting">
 <title></title>
-<style type="text/css"></style>
+<style type="text/css">
+html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
+    @media only screen and (max-device-width: 600px), only screen and (max-width: 600px) {
+    .mob_center{
+        text-align: center !important;
+    }
+    .mob_hidden{
+        display:none !important;
+    }
+    .mob_disp {
+        display:inline !important;
+    }
+    .mob_title{
+        font-size:26px !important;
+        line-height:32px !important;
+    }
+    .mob_header_font1{
+        font-size:32px !important;
+        line-height:40px !important;
+    }
+    .mob_header_font2{
+        font-size:16px !important;
+        line-height:24px !important;
+    }
+    .mob_width{
+        width:280px !important;
+    }
+    .mob_btn {
+        height: 60px !important;
+        line-height: 60px !important;
+        font-size: 18px !important;
+        border-radius: 8px !important;
+    }
+    .mob_txt {
+        width: 83% !important;
+        max-width: 560px !important;
+        min-width: 280px !important;
+    }
+    .mob_br {
+        border-radius: 24px !important;
+    }
+    .mob_h_auto{
+        height: auto !important;
+    }
+}
+
+.mail_preheader {
+    display: none !important;
+}
+
+</style>
 </head>
     <body style="margin: 0; padding: 0; word-break: 0;">
         <div id="mailsub" class="notification" align="center" style="word-break: normal; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; line-height: normal;">
@@ -14,8 +64,60 @@
                 <tr>
                     <td align="center" bgcolor="#E5E5E5">
                         <div style="max-width: 600px;">
-                            <table align="center" width = "100%" border="0" cellspasing = "0" cellpadding = "0">
-
+                            <table align="center" width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="max-width: 600px; min-width:360px;">
+                                <!-- preheader -->
+                                <tr>
+                                    <td align="center">
+                                        <div class="mail_preheader" style="font-size:0px;color:#F0F1F3;line-height:0px;">
+                                            Подготовка машины к зиме
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- preheader END -->
+                                <tr>
+                                    <td align="center">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse;">
+                                            <!-- content -->
+                                            <tr>
+                                                <td align="center">
+                                                     <!-- padding --><div style="height:36px; line-height:36px; font-size:8px;">&nbsp;</div>
+                                                    <table width="83%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px;">
+                                                        <tr>
+                                                            <td class="mob_hidden" align="left" valign="top">
+                                                                <span style="font-size:20px; font-family:'MailSans',Helvetica,Arial,Tahoma,Verdana,sans-serif;color:#919399;line-height:28px; text-decoration: none; vertical-align: middle;">
+                                                                        {% if profile.firstname|length > 1 and profile.firstname|length < 15 %}Здравствуйте, {{profile.firstname}}! {% else %} Здравствуйте! {% endif %}
+                                                                </span>  
+                                                            </td>
+                                                            <td width="128" align="left" valign="middle">
+                                                                <a style="font-size:20px; font-family:&apos;MailSans&apos;,Helvetica,Arial,Tahoma,Verdana,sans-serif;color:#bce3ff; text-decoration: none;" mlr-mailru-auth href="https://sportmail.ru/?utm_source=email&amp;utm_medium=marketingletter&amp;utm_campaign=special_sport&amp;utm_content=chm_football2022&amp;utm_term=18112022" target="_blank" data-url-index="317667"><img src="https://mailer.mail.ru/hotbox/mailer_media/letter/static/2022/11/19/4B4OkyoutyNSyf1/img/logo1.png" width="128" height="28" style="display: inline-block; border: none;" alt="@спорт" /></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                    <!-- padding --><div style="height:16px; line-height:16px; font-size:8px;">&nbsp;</div>
+                                    <!-- padding --><div class="mob_hidden" style="height:8px; line-height:8px; font-size:6px;">&nbsp;</div>
+                                                    <table width="83%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px;">
+                                                        <tr>
+                                                            <td align="left">
+                                                                <span class="mob_header_font1" style="font-family: 'Mail Sans Roman', sans-serif;font-style: normal;font-weight: 500;font-size: 48px;line-height: 56px;color: #2C2D2E;">
+                                                                    Чек-лист автомобилиста по подготовке к зиме
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                    <!-- padding --><div style="height:16px; line-height:16px; font-size:8px;">&nbsp;</div>
+                                                    <table width="83%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px;">
+                                                        <tr>
+                                                            <td  align="left">
+                                                                <span class="mob_header_font2" style="font-family: 'Arial', sans-serif;font-style: normal;font-weight: 400;font-size: 20px;line-height: 28px;color: #2C2D2E;">Авто Mail.ru в специальном редакционном проекте рассказывает, как подготовить автомобиль к наступающему зимнему сезону — что купить в машину, когда менять шины и что стоит заменить до наступления морозов.</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                    <!-- padding --><div style="height:32px; line-height:32px; font-size:8px;">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>     
                             </table>
                         </div>   
                     </td>
